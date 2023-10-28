@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard_styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div><a href="/dashboard" class="logo">App Name</a></div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="menu" id="menu">
+            <a href="/#">Page 1</a>
+            <a href="/#">Page 2</a>
+            <a href="/#">Page 3</a>
+            <a href="/#">Page 4</a>
+        </div>
+    </nav>
+    <script>
+        var mobileMenuButton = document.getElementById('mobile-menu');
+        var menu = document.getElementById('menu');
+
+        mobileMenuButton.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+    <div class="internships">Add Your Content and Dashboard elements here</div>
+
+</body>
+</html>
